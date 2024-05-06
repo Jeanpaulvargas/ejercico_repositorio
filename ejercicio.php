@@ -39,3 +39,10 @@ class Computadora extends DispositivoElectronico {
     }
 }
 
+$television = new Television("Samsung", 100);
+echo $television->getInfo() . "<br>";
+echo $television->getConsumoElectrico() . " watts<hr>";
+$computadora = new Computadora("HP", 500, "Windows");
+echo $computadora->getInfo() . "<br>";
+echo $computadora->getSistemaOperativo();
+?>
